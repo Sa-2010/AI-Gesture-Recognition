@@ -16,7 +16,7 @@ function setup() {
 
 function draw() {
   background('#e84396');
- document.getElementById("square_side").innerHtml = "Width And Height of a Square will be = " + differnce + "px";
+ document.getElementById("square_side").innerHTML = "Width And Height of a Square will be = " + difference + "px";
  fill('#c906c3');
  stroke('#50c7fa');
  square(noseX, noseY, difference);
@@ -37,6 +37,6 @@ function gotPoses(results)
   rightWristX = results[0].pose.rightWrist.x;
   leftWristX = results[0].pose.leftWrist.x;
   difference = floor(leftWristX - rightWristX);
-  console.log("leftWristX =" + leftWristX + " rightWristX ="  + rightWristX + "diffrence = " + diffrence);
+  console.log("leftWristX =" + leftWristX + " rightWristX ="  + rightWristX + "difference = " + diffrence);
   }
 }
